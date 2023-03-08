@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/kidgame/static/css/main.1c424ff7.css",
-    "main.js": "/kidgame/static/js/main.0d113e09.js",
+    "main.css": "/kidgame/static/css/main.ac0537c8.css",
+    "main.js": "/kidgame/static/js/main.410e506c.js",
     "static/js/787.b0e5d290.chunk.js": "/kidgame/static/js/787.b0e5d290.chunk.js",
     "index.html": "/kidgame/index.html",
-    "main.1c424ff7.css.map": "/kidgame/static/css/main.1c424ff7.css.map",
-    "main.0d113e09.js.map": "/kidgame/static/js/main.0d113e09.js.map",
+    "main.ac0537c8.css.map": "/kidgame/static/css/main.ac0537c8.css.map",
+    "main.410e506c.js.map": "/kidgame/static/js/main.410e506c.js.map",
     "787.b0e5d290.chunk.js.map": "/kidgame/static/js/787.b0e5d290.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c424ff7.css",
-    "static/js/main.0d113e09.js"
+    "static/css/main.ac0537c8.css",
+    "static/js/main.410e506c.js"
   ]
 }
