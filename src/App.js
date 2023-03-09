@@ -190,6 +190,7 @@ function App() {
                   <AudioRecorder
                     onRecordingComplete={(blob) => addAudioElement(blob)}
                     recorderControls={recorderControls}
+                    classes="audioClass"
                   />
                 </div>
               </Col>
