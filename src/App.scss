@@ -1,6 +1,7 @@
 .App {
-  padding: 50px;
-  height: 100%;
+  padding: 20px 20px 120px 20px;
+  min-height: 100%;
+  position: relative;
 }
 
 .logo-wrapper {
@@ -17,9 +18,8 @@
   font-weight: 700;
   font-style: normal;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
-  line-height: 100px;
   text-transform: uppercase;
 }
 
@@ -34,7 +34,7 @@
   position: relative;
   z-index: 2;
   display: flex;
-  min-height: 100px;
+  min-height: 150px;
 
   .image {
     width: 100%;
@@ -82,6 +82,7 @@
   font-size: 2.5rem;
   border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
   position: relative;
+  margin-bottom: 50px;
 
   &::before {
     content: '';
@@ -106,10 +107,8 @@
 
 }
 
-.title {
-
-}
 .right-div {
+  width: 100%;
   z-index: 10;
   position: relative;
   display: grid;
@@ -117,6 +116,10 @@
   column-gap: 50px;
   row-gap: 20px;
   grid-template-columns: repeat(5, 1fr);
+  @media only screen and (max-width: 820px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  justify-content: space-between;
 }
 
 .noborder {
@@ -126,7 +129,7 @@
 .bigger-wrapper {
   display: flex;
   flex-flow: column;
-
+  margin-top: 30px;
 }
 
 .left-title {
@@ -168,7 +171,7 @@
 
 .group-choose {
   display: grid;
-  margin-bottom: 30px;
+  margin-top: 20px;
   grid-template-columns: auto auto auto;
   justify-content: center;
   column-gap: 20px;
@@ -204,4 +207,20 @@
     top: -10px;
     right: -10px;
   }
+}
+
+#audio-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+  justify-content: flex-start;
+}
+
+.body-wrapper {
+}
+
+.image-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
 }
