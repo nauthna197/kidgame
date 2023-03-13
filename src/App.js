@@ -97,11 +97,38 @@ function App() {
             <Row className="simple-row">
               <Col span={4} className="column-title">
                 <img
+                  className="image"
+                  src={process.env.PUBLIC_URL + "/images/cau-be-bong-den.png"}
+                  alt="image"
+                />
+                <div className="title left-title text-beauty">Tôi nghĩ</div>
+              </Col>
+              <Col span={19} className="flex-center">
+                <div className="title right-div">
+                  {listDataImage.map((data, index) => (
+                    <ImageWrapper
+                      onHandleRemove={() => {
+                        const newList = [...listDataDraw];
+                        newList.splice(index, 1);
+                        setListDataImage(newList);
+                      }}
+                      key={index}
+                      width={100}
+                      src={data}
+                    />
+                  ))}
+                  <CameraButton onSaveData={onTakeCamera} />
+                </div>
+              </Col>
+            </Row>
+            <Row className="simple-row">
+              <Col span={4} className="column-title">
+                <img
                   className="image flip"
                   src={process.env.PUBLIC_URL + "/images/girl-kinh-lup.png"}
                   alt="image"
                 />
-                <div className="title left-title text-beauty">Tôi nghĩ</div>
+                <div className="title left-title text-beauty">Tôi thấy</div>
               </Col>
               <Col span={19} className="flex-center">
                 <div className="title right-div">
@@ -127,33 +154,7 @@ function App() {
                 </div>
               </Col>
             </Row>
-            <Row className="simple-row">
-              <Col span={4} className="column-title">
-                <img
-                  className="image"
-                  src={process.env.PUBLIC_URL + "/images/cau-be-bong-den.png"}
-                  alt="image"
-                />
-                <div className="title left-title text-beauty">Tôi thấy</div>
-              </Col>
-              <Col span={19} className="flex-center">
-                <div className="title right-div">
-                  {listDataImage.map((data, index) => (
-                    <ImageWrapper
-                      onHandleRemove={() => {
-                        const newList = [...listDataDraw];
-                        newList.splice(index, 1);
-                        setListDataImage(newList);
-                      }}
-                      key={index}
-                      width={100}
-                      src={data}
-                    />
-                  ))}
-                  <CameraButton onSaveData={onTakeCamera} />
-                </div>
-              </Col>
-            </Row>
+
             <Row className="simple-row">
               <Col span={4} className="column-title">
                 <img
