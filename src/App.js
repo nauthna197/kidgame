@@ -101,7 +101,7 @@ function App() {
                   src={process.env.PUBLIC_URL + "/images/girl-kinh-lup.png"}
                   alt="image"
                 />
-                <div className="title left-title text-beauty">Tôi thấy</div>
+                <div className="title left-title text-beauty">Tôi nghĩ</div>
               </Col>
               <Col span={19} className="flex-center">
                 <div className="title right-div">
@@ -134,7 +134,7 @@ function App() {
                   src={process.env.PUBLIC_URL + "/images/cau-be-bong-den.png"}
                   alt="image"
                 />
-                <div className="title left-title text-beauty">Tôi nghĩ</div>
+                <div className="title left-title text-beauty">Tôi thấy</div>
               </Col>
               <Col span={19} className="flex-center">
                 <div className="title right-div">
